@@ -53,21 +53,14 @@ print 'This data has {} cosine groups.'.format(number_of_cos_groups - 1)
 
 #energy groups
 erg_groups = n_data[0:number_of_erg_groups,0]
-erg_group_width = erg_groups[1:] - erg_groups[:-1]
 
 #flux & error data stored in [angle,group] format
 n_flux = n_data[:,1].reshape(number_of_cos_groups,number_of_erg_groups)[1:,1:]
-n_error = n_data[:,2].reshape(number_of_cos_groups,number_of_erg_groups)[1:,1:]
 
-#cosine groups
+#input data on cosine bin structure and compare with structure from n_data
 cos_bins = np.loadtxt('input/cos_bin_structure.txt')
 cos_bin_width = cos_bins[:-1] - cos_bins[1:]
-cos_midpoints = np.append(cos_bins[1:] + (cos_bin_width / 2.), [0])
 assert len(cos_bins) == number_of_cos_groups
-
-#create a normalization matrix and normalize the flux values
-width_matrix = np.outer(cos_bin_width, erg_group_width)
-n_flux_norm = n_flux / width_matrix
 
 #convert cosine bin values to radians
 cos_bins_radians = np.cos(cos_bins * (np.pi / 180))
@@ -90,8 +83,6 @@ s += 'SP6 -21  1\n'
 s += cardWriter('SI3 H', erg_groups)
 s += cardWriter('SP3 D', np.append(0, np.sum(n_flux, axis=0)))
 s += cardWriter('DS5 S', dist_source_numbers[1:])
-#s += cardWriter('SI100 H', cos_bins_radians)
-#s += cardWriter('SP100 D', dummy_distribution)
 for e in range(number_of_erg_groups - 1):
     s += cardWriter('SI{} H'.format(dist_source_numbers[e] + 1), cos_bins_radians)
     s += cardWriter('SP{} D'.format(dist_source_numbers[e] + 1), np.append(0, n_flux[:,e]))
