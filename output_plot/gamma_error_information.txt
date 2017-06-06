@@ -1,0 +1,7 @@
+Gamma Bin Error Information
+ 76 bins (74.51% of total) have a relative error between 0 and 0.05
+  6 bins (5.88% of total) have a relative error between 0.05 and 0.1
+  5 bins (4.90% of total) have a relative error between 0.1 and 0.2
+  4 bins (3.92% of total) have a relative error between 0.2 and 0.3
+  5 bins (4.90% of total) have a relative error between 0.3 and 0.4
+  6 bins (5.88% of total) have a relative error between 0.4 and 1.0
