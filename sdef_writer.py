@@ -69,6 +69,7 @@ assert len(cos_bins) == number_of_cos_groups
 width_matrix = np.outer(cos_bin_width, erg_group_width)
 n_flux_norm = n_flux / width_matrix
 
+#convert cosine bin values to radians
 cos_bins_radians = np.cos(cos_bins * (np.pi / 180))
 
 
@@ -88,9 +89,9 @@ s += 'SI6   0  1.27\n'
 s += 'SP6 -21  1\n'
 s += cardWriter('SI3 H', erg_groups)
 s += cardWriter('SP3 D', np.append(0, np.sum(n_flux, axis=0)))
-s += cardWriter('DS5 S', dist_source_numbers)
-s += cardWriter('SI100 H', cos_bins_radians)
-s += cardWriter('SP100 D', dummy_distribution)
+s += cardWriter('DS5 S', dist_source_numbers[1:])
+#s += cardWriter('SI100 H', cos_bins_radians)
+#s += cardWriter('SP100 D', dummy_distribution)
 for e in range(number_of_erg_groups - 1):
     s += cardWriter('SI{} H'.format(dist_source_numbers[e] + 1), cos_bins_radians)
     s += cardWriter('SP{} D'.format(dist_source_numbers[e] + 1), np.append(0, n_flux[:,e]))
