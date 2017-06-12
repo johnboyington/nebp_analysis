@@ -1,0 +1,2379 @@
+ cell  201100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.24081E-04 0.0057
+ 
+ cell  201110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.78049E-04 0.0048
+ 
+ cell  201120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.20212E-04 0.0043
+ 
+ cell  201130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.29601E-04 0.0042
+ 
+ cell  201140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.14831E-04 0.0043
+ 
+ cell  201150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.85216E-04 0.0047
+ 
+ cell  201160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.36864E-04 0.0054
+ 
+ cell  202100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.24872E-04 0.0057
+ 
+ cell  202110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.77148E-04 0.0048
+ 
+ cell  202120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.19687E-04 0.0043
+ 
+ cell  202130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.26062E-04 0.0042
+ 
+ cell  202140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.13683E-04 0.0043
+ 
+ cell  202150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.84156E-04 0.0046
+ 
+ cell  202160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.36260E-04 0.0053
+ 
+ cell  203100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38875E-04 0.0054
+ 
+ cell  203110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.97819E-04 0.0045
+ 
+ cell  203120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.42332E-04 0.0041
+ 
+ cell  203130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.49173E-04 0.0040
+ 
+ cell  203140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.32430E-04 0.0041
+ 
+ cell  203150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.98459E-04 0.0045
+ 
+ cell  203160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.44405E-04 0.0052
+ 
+ cell  204100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.58433E-04 0.0051
+ 
+ cell  204110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.27306E-04 0.0043
+ 
+ cell  204120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.77534E-04 0.0039
+ 
+ cell  204130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.86083E-04 0.0038
+ 
+ cell  204140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.67035E-04 0.0039
+ 
+ cell  204150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.24672E-04 0.0042
+ 
+ cell  204160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.63404E-04 0.0049
+ 
+ cell  205100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.40915E-04 0.0053
+ 
+ cell  205110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.03235E-04 0.0045
+ 
+ cell  205120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.47233E-04 0.0040
+ 
+ cell  205130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.54899E-04 0.0040
+ 
+ cell  205140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.38936E-04 0.0041
+ 
+ cell  205150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.02375E-04 0.0044
+ 
+ cell  205160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.48598E-04 0.0051
+ 
+ cell  206100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27546E-04 0.0056
+ 
+ cell  206110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.81614E-04 0.0047
+ 
+ cell  206120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.22023E-04 0.0043
+ 
+ cell  206130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.31901E-04 0.0041
+ 
+ cell  206140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.19395E-04 0.0042
+ 
+ cell  206150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.89981E-04 0.0046
+ 
+ cell  206160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.41002E-04 0.0053
+ 
+ cell  301100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.83671E-05 0.0064
+ 
+ cell  301110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.41629E-04 0.0053
+ 
+ cell  301120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.72462E-04 0.0048
+ 
+ cell  301130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.88258E-04 0.0046
+ 
+ cell  301140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.86005E-04 0.0047
+ 
+ cell  301150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.61618E-04 0.0050
+ 
+ cell  301160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.22406E-04 0.0057
+ 
+ cell  302100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.83973E-05 0.0065
+ 
+ cell  302110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.41228E-04 0.0054
+ 
+ cell  302120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.72601E-04 0.0049
+ 
+ cell  302130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.87832E-04 0.0047
+ 
+ cell  302140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.85167E-04 0.0048
+ 
+ cell  302150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.64300E-04 0.0050
+ 
+ cell  302160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.24050E-04 0.0057
+ 
+ cell  303100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.60820E-05 0.0068
+ 
+ cell  303110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.21758E-04 0.0058
+ 
+ cell  303120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.50221E-04 0.0052
+ 
+ cell  303130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.62031E-04 0.0050
+ 
+ cell  303140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.60066E-04 0.0050
+ 
+ cell  303150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.60943E-04 0.0051
+ 
+ cell  303160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.30978E-04 0.0055
+ 
+ cell  304100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.09819E-04 0.0061
+ 
+ cell  304110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.55892E-04 0.0051
+ 
+ cell  304120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.90354E-04 0.0046
+ 
+ cell  304130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.06968E-04 0.0045
+ 
+ cell  304140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.02063E-04 0.0045
+ 
+ cell  304150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.78092E-04 0.0048
+ 
+ cell  304160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.33287E-04 0.0055
+ 
+ cell  305100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20988E-04 0.0057
+ 
+ cell  305110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.73192E-04 0.0048
+ 
+ cell  305120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.12426E-04 0.0044
+ 
+ cell  305130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.29930E-04 0.0042
+ 
+ cell  305140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.20631E-04 0.0043
+ 
+ cell  305150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.87803E-04 0.0046
+ 
+ cell  305160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.36376E-04 0.0054
+ 
+ cell  306100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.50068E-04 0.0053
+ 
+ cell  306110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.14385E-04 0.0045
+ 
+ cell  306120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.60950E-04 0.0041
+ 
+ cell  306130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.79396E-04 0.0039
+ 
+ cell  306140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.68695E-04 0.0040
+ 
+ cell  306150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.25794E-04 0.0044
+ 
+ cell  306160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.62910E-04 0.0051
+ 
+ cell  308100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.50394E-04 0.0052
+ 
+ cell  308110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.13710E-04 0.0044
+ 
+ cell  308120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.58583E-04 0.0040
+ 
+ cell  308130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.77191E-04 0.0039
+ 
+ cell  308140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.67323E-04 0.0039
+ 
+ cell  308150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.24975E-04 0.0043
+ 
+ cell  308160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.61424E-04 0.0050
+ 
+ cell  309100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.30086E-04 0.0056
+ 
+ cell  309110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.84376E-04 0.0047
+ 
+ cell  309120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.25319E-04 0.0043
+ 
+ cell  309130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.42259E-04 0.0041
+ 
+ cell  309140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.35920E-04 0.0042
+ 
+ cell  309150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.01779E-04 0.0045
+ 
+ cell  309160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.45613E-04 0.0053
+ 
+ cell  310100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.17224E-04 0.0059
+ 
+ cell  310110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.68945E-04 0.0050
+ 
+ cell  310120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.06916E-04 0.0045
+ 
+ cell  310130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.22993E-04 0.0043
+ 
+ cell  310140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.20064E-04 0.0043
+ 
+ cell  310150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.93630E-04 0.0046
+ 
+ cell  310160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.43247E-04 0.0053
+ 
+ cell  311100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.00680E-05 0.0067
+ 
+ cell  311110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.29596E-04 0.0056
+ 
+ cell  311120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.58108E-04 0.0051
+ 
+ cell  311130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.73827E-04 0.0049
+ 
+ cell  311140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.86881E-04 0.0047
+ 
+ cell  311150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.86614E-04 0.0047
+ 
+ cell  311160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.42756E-04 0.0053
+ 
+ cell  312100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.84409E-05 0.0064
+ 
+ cell  312110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.42101E-04 0.0054
+ 
+ cell  312120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.76663E-04 0.0049
+ 
+ cell  312130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.93270E-04 0.0047
+ 
+ cell  312140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.93532E-04 0.0047
+ 
+ cell  312150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.71620E-04 0.0049
+ 
+ cell  312160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.28451E-04 0.0056
+ 
+ cell  401100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.55796E-05 0.0074
+ 
+ cell  401110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.07538E-04 0.0063
+ 
+ cell  401120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.32476E-04 0.0057
+ 
+ cell  401130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.45013E-04 0.0054
+ 
+ cell  401140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.45833E-04 0.0054
+ 
+ cell  401150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.39507E-04 0.0055
+ 
+ cell  401160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.10917E-04 0.0061
+ 
+ cell  402100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.97668E-05 0.0072
+ 
+ cell  402110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.12555E-04 0.0061
+ 
+ cell  402120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.37107E-04 0.0056
+ 
+ cell  402130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.51918E-04 0.0053
+ 
+ cell  402140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.48882E-04 0.0053
+ 
+ cell  402150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.34632E-04 0.0056
+ 
+ cell  402160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.02670E-04 0.0063
+ 
+ cell  403100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.60159E-05 0.0079
+ 
+ cell  403110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.27451E-05 0.0066
+ 
+ cell  403120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.13837E-04 0.0060
+ 
+ cell  403130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.23721E-04 0.0058
+ 
+ cell  403140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.25177E-04 0.0058
+ 
+ cell  403150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27186E-04 0.0057
+ 
+ cell  403160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.08062E-04 0.0061
+ 
+ cell  405100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.66970E-05 0.0074
+ 
+ cell  405110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.09476E-04 0.0063
+ 
+ cell  405120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.33832E-04 0.0057
+ 
+ cell  405130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.43197E-04 0.0055
+ 
+ cell  405140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.42779E-04 0.0055
+ 
+ cell  405150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.43213E-04 0.0055
+ 
+ cell  405160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.18878E-04 0.0060
+ 
+ cell  406100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.88404E-05 0.0064
+ 
+ cell  406110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38861E-04 0.0054
+ 
+ cell  406120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.70414E-04 0.0049
+ 
+ cell  406130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.83338E-04 0.0047
+ 
+ cell  406140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.79016E-04 0.0048
+ 
+ cell  406150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.54836E-04 0.0052
+ 
+ cell  406160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.14299E-04 0.0059
+ 
+ cell  407100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.10590E-04 0.0061
+ 
+ cell  407110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.58717E-04 0.0051
+ 
+ cell  407120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.91995E-04 0.0047
+ 
+ cell  407130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.08508E-04 0.0045
+ 
+ cell  407140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.00787E-04 0.0046
+ 
+ cell  407150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.68378E-04 0.0050
+ 
+ cell  407160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.22966E-04 0.0058
+ 
+ cell  408100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.21313E-04 0.0059
+ 
+ cell  408110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.72157E-04 0.0050
+ 
+ cell  408120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.09146E-04 0.0045
+ 
+ cell  408130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.25417E-04 0.0044
+ 
+ cell  408140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.16325E-04 0.0045
+ 
+ cell  408150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.81286E-04 0.0049
+ 
+ cell  408160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31218E-04 0.0057
+ 
+ cell  409100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.30321E-04 0.0057
+ 
+ cell  409110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.84323E-04 0.0048
+ 
+ cell  409120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.25621E-04 0.0043
+ 
+ cell  409130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.42751E-04 0.0042
+ 
+ cell  409140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.30035E-04 0.0043
+ 
+ cell  409150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.91666E-04 0.0047
+ 
+ cell  409160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.39817E-04 0.0054
+ 
+ cell  410100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.35788E-04 0.0054
+ 
+ cell  410110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.95157E-04 0.0046
+ 
+ cell  410120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.36229E-04 0.0041
+ 
+ cell  410130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.53505E-04 0.0040
+ 
+ cell  410140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.42642E-04 0.0041
+ 
+ cell  410150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.04412E-04 0.0045
+ 
+ cell  410160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.45768E-04 0.0052
+ 
+ cell  411100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31434E-04 0.0056
+ 
+ cell  411110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.88945E-04 0.0048
+ 
+ cell  411120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.30020E-04 0.0043
+ 
+ cell  411130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.45819E-04 0.0042
+ 
+ cell  411140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.35209E-04 0.0043
+ 
+ cell  411150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.99174E-04 0.0046
+ 
+ cell  411160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.43551E-04 0.0054
+ 
+ cell  412100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.26695E-04 0.0057
+ 
+ cell  412110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.80121E-04 0.0048
+ 
+ cell  412120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.22346E-04 0.0044
+ 
+ cell  412130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.36754E-04 0.0042
+ 
+ cell  412140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.27113E-04 0.0043
+ 
+ cell  412150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.90947E-04 0.0047
+ 
+ cell  412160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38197E-04 0.0055
+ 
+ cell  413100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20020E-04 0.0059
+ 
+ cell  413110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.70832E-04 0.0050
+ 
+ cell  413120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.10750E-04 0.0045
+ 
+ cell  413130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.27090E-04 0.0043
+ 
+ cell  413140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.17525E-04 0.0044
+ 
+ cell  413150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.84741E-04 0.0048
+ 
+ cell  413160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.34317E-04 0.0055
+ 
+ cell  414100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.09310E-04 0.0061
+ 
+ cell  414110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.56095E-04 0.0052
+ 
+ cell  414120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.91938E-04 0.0047
+ 
+ cell  414130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.07684E-04 0.0045
+ 
+ cell  414140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.05490E-04 0.0045
+ 
+ cell  414150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.77185E-04 0.0049
+ 
+ cell  414160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.28975E-04 0.0056
+ 
+ cell  415100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.42535E-05 0.0070
+ 
+ cell  415110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.18906E-04 0.0059
+ 
+ cell  415120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.46051E-04 0.0054
+ 
+ cell  415130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.60285E-04 0.0051
+ 
+ cell  415140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.73213E-04 0.0049
+ 
+ cell  415150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.73325E-04 0.0049
+ 
+ cell  415160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31787E-04 0.0056
+ 
+ cell  417100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.96884E-05 0.0077
+ 
+ cell  417110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.93250E-05 0.0065
+ 
+ cell  417120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.24693E-04 0.0058
+ 
+ cell  417130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.36600E-04 0.0056
+ 
+ cell  417140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.49831E-04 0.0053
+ 
+ cell  417150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.56387E-04 0.0052
+ 
+ cell  417160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20003E-04 0.0058
+ 
+ cell  418100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.06038E-05 0.0072
+ 
+ cell  418110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.14742E-04 0.0061
+ 
+ cell  418120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.41912E-04 0.0055
+ 
+ cell  418130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.55201E-04 0.0053
+ 
+ cell  418140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.55836E-04 0.0052
+ 
+ cell  418150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.40994E-04 0.0055
+ 
+ cell  418160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.07879E-04 0.0062
+ 
+ cell  502100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.59501E-05 0.0085
+ 
+ cell  502110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.78096E-05 0.0073
+ 
+ cell  502120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.57472E-05 0.0066
+ 
+ cell  502130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.03208E-04 0.0063
+ 
+ cell  502140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.03513E-04 0.0063
+ 
+ cell  502150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00688E-04 0.0064
+ 
+ cell  502160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.42325E-05 0.0069
+ 
+ cell  503100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.20698E-05 0.0082
+ 
+ cell  503110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.64578E-05 0.0070
+ 
+ cell  503120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.04929E-04 0.0064
+ 
+ cell  503130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.13872E-04 0.0062
+ 
+ cell  503140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.11817E-04 0.0062
+ 
+ cell  503150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00201E-04 0.0066
+ 
+ cell  503160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.05422E-05 0.0072
+ 
+ cell  504100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.59296E-05 0.0086
+ 
+ cell  504110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.82516E-05 0.0074
+ 
+ cell  504120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.37998E-05 0.0067
+ 
+ cell  504130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.01259E-04 0.0065
+ 
+ cell  504140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00110E-04 0.0065
+ 
+ cell  504150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.65929E-05 0.0066
+ 
+ cell  504160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.11197E-05 0.0071
+ 
+ cell  505100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 4.95705E-05 0.0090
+ 
+ cell  505110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.97040E-05 0.0078
+ 
+ cell  505120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.50944E-05 0.0071
+ 
+ cell  505130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.11133E-05 0.0068
+ 
+ cell  505140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.10926E-05 0.0068
+ 
+ cell  505150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.99580E-05 0.0065
+ 
+ cell  505160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.98004E-05 0.0068
+ 
+ cell  506100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.33242E-05 0.0081
+ 
+ cell  506110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.96897E-05 0.0069
+ 
+ cell  506120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.09135E-04 0.0063
+ 
+ cell  506130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.18026E-04 0.0061
+ 
+ cell  506140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.14871E-04 0.0061
+ 
+ cell  506150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.08988E-04 0.0063
+ 
+ cell  506160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.88143E-05 0.0068
+ 
+ cell  507100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.57528E-05 0.0075
+ 
+ cell  507110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.07721E-04 0.0064
+ 
+ cell  507120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31003E-04 0.0058
+ 
+ cell  507130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.41738E-04 0.0056
+ 
+ cell  507140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.37393E-04 0.0056
+ 
+ cell  507150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20184E-04 0.0060
+ 
+ cell  507160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.09165E-05 0.0068
+ 
+ cell  508100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.73329E-05 0.0068
+ 
+ cell  508110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.21479E-04 0.0059
+ 
+ cell  508120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.47018E-04 0.0054
+ 
+ cell  508130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.57908E-04 0.0052
+ 
+ cell  508140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.53590E-04 0.0053
+ 
+ cell  508150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31452E-04 0.0056
+ 
+ cell  508160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.79838E-05 0.0065
+ 
+ cell  509100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.53616E-05 0.0067
+ 
+ cell  509110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.32385E-04 0.0058
+ 
+ cell  509120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.61289E-04 0.0052
+ 
+ cell  509130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.76372E-04 0.0050
+ 
+ cell  509140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.67775E-04 0.0051
+ 
+ cell  509150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.40840E-04 0.0055
+ 
+ cell  509160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.04117E-04 0.0063
+ 
+ cell  510100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.91547E-05 0.0065
+ 
+ cell  510110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38961E-04 0.0056
+ 
+ cell  510120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.70921E-04 0.0050
+ 
+ cell  510130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.86489E-04 0.0048
+ 
+ cell  510140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.77606E-04 0.0049
+ 
+ cell  510150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.47856E-04 0.0054
+ 
+ cell  510160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.08140E-04 0.0062
+ 
+ cell  511100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.05074E-04 0.0063
+ 
+ cell  511110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.44821E-04 0.0054
+ 
+ cell  511120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.78694E-04 0.0049
+ 
+ cell  511130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.92413E-04 0.0048
+ 
+ cell  511140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.83035E-04 0.0049
+ 
+ cell  511150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.52708E-04 0.0053
+ 
+ cell  511160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.10785E-04 0.0062
+ 
+ cell  512100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.05953E-04 0.0062
+ 
+ cell  512110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.48003E-04 0.0053
+ 
+ cell  512120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.79199E-04 0.0048
+ 
+ cell  512130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.90975E-04 0.0047
+ 
+ cell  512140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.82678E-04 0.0048
+ 
+ cell  512150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.53816E-04 0.0053
+ 
+ cell  512160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.12687E-04 0.0060
+ 
+ cell  513100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.04124E-04 0.0061
+ 
+ cell  513110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.47511E-04 0.0052
+ 
+ cell  513120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.78296E-04 0.0048
+ 
+ cell  513130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.90347E-04 0.0046
+ 
+ cell  513140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.82112E-04 0.0047
+ 
+ cell  513150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.52103E-04 0.0052
+ 
+ cell  513160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.11280E-04 0.0060
+ 
+ cell  514100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.08502E-04 0.0062
+ 
+ cell  514110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.52434E-04 0.0053
+ 
+ cell  514120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.86229E-04 0.0048
+ 
+ cell  514130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 2.00411E-04 0.0046
+ 
+ cell  514140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.92364E-04 0.0047
+ 
+ cell  514150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.59186E-04 0.0052
+ 
+ cell  514160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.16680E-04 0.0060
+ 
+ cell  515100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.06187E-04 0.0062
+ 
+ cell  515110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.50350E-04 0.0052
+ 
+ cell  515120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.82379E-04 0.0048
+ 
+ cell  515130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.92669E-04 0.0046
+ 
+ cell  515140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.85402E-04 0.0047
+ 
+ cell  515150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.55556E-04 0.0051
+ 
+ cell  515160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.13570E-04 0.0060
+ 
+ cell  516100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.06112E-04 0.0063
+ 
+ cell  516110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.51488E-04 0.0053
+ 
+ cell  516120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.85674E-04 0.0048
+ 
+ cell  516130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.99757E-04 0.0047
+ 
+ cell  516140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.90075E-04 0.0048
+ 
+ cell  516150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.59009E-04 0.0052
+ 
+ cell  516160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.16690E-04 0.0060
+ 
+ cell  517100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00993E-04 0.0063
+ 
+ cell  517110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.42539E-04 0.0054
+ 
+ cell  517120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.71129E-04 0.0049
+ 
+ cell  517130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.84339E-04 0.0047
+ 
+ cell  517140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.77664E-04 0.0048
+ 
+ cell  517150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.50986E-04 0.0052
+ 
+ cell  517160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.10837E-04 0.0060
+ 
+ cell  518100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.50904E-05 0.0066
+ 
+ cell  518110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.30912E-04 0.0057
+ 
+ cell  518120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.60387E-04 0.0051
+ 
+ cell  518130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.73291E-04 0.0049
+ 
+ cell  518140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.70414E-04 0.0050
+ 
+ cell  518150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.46249E-04 0.0054
+ 
+ cell  518160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.07616E-04 0.0062
+ 
+ cell  519100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.50653E-05 0.0069
+ 
+ cell  519110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.19528E-04 0.0059
+ 
+ cell  519120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.46824E-04 0.0054
+ 
+ cell  519130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.58588E-04 0.0052
+ 
+ cell  519140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.57658E-04 0.0052
+ 
+ cell  519150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.39354E-04 0.0055
+ 
+ cell  519160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.04179E-04 0.0063
+ 
+ cell  520100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.01169E-05 0.0077
+ 
+ cell  520110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.82535E-05 0.0065
+ 
+ cell  520120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.19504E-04 0.0059
+ 
+ cell  520130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.34292E-04 0.0056
+ 
+ cell  520140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38567E-04 0.0055
+ 
+ cell  520150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.30883E-04 0.0057
+ 
+ cell  520160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.01040E-04 0.0063
+ 
+ cell  521100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.43686E-05 0.0087
+ 
+ cell  521110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.66733E-05 0.0074
+ 
+ cell  521120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.34398E-05 0.0067
+ 
+ cell  521130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.03738E-04 0.0063
+ 
+ cell  521140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20911E-04 0.0059
+ 
+ cell  521150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31434E-04 0.0056
+ 
+ cell  521160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.05297E-04 0.0063
+ 
+ cell  522100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.94471E-05 0.0083
+ 
+ cell  522110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.45097E-05 0.0071
+ 
+ cell  522120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.03866E-04 0.0064
+ 
+ cell  522130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.15945E-04 0.0061
+ 
+ cell  522140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.22589E-04 0.0059
+ 
+ cell  522150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.19544E-04 0.0059
+ 
+ cell  522160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.37302E-05 0.0066
+ 
+ cell  523100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.32838E-05 0.0081
+ 
+ cell  523110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.96384E-05 0.0069
+ 
+ cell  523120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.12580E-04 0.0062
+ 
+ cell  523130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20969E-04 0.0059
+ 
+ cell  523140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.23310E-04 0.0059
+ 
+ cell  523150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.13401E-04 0.0062
+ 
+ cell  523160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.84626E-05 0.0069
+ 
+ cell  524100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.78956E-05 0.0084
+ 
+ cell  524110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.21260E-05 0.0072
+ 
+ cell  524120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.01147E-04 0.0065
+ 
+ cell  524130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.09256E-04 0.0063
+ 
+ cell  524140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.11174E-04 0.0062
+ 
+ cell  524150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.10150E-04 0.0063
+ 
+ cell  524160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.97748E-05 0.0068
+ 
+ cell  601100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 4.42761E-05 0.0096
+ 
+ cell  601110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.05486E-05 0.0084
+ 
+ cell  601120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.29371E-05 0.0077
+ 
+ cell  601130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.97214E-05 0.0074
+ 
+ cell  601140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.96234E-05 0.0074
+ 
+ cell  601150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.21341E-05 0.0073
+ 
+ cell  601160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.26664E-05 0.0075
+ 
+ cell  602100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 4.81972E-05 0.0092
+ 
+ cell  602110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.43905E-05 0.0082
+ 
+ cell  602120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.72660E-05 0.0075
+ 
+ cell  602130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.27283E-05 0.0073
+ 
+ cell  602140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.16610E-05 0.0073
+ 
+ cell  602150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.65431E-05 0.0074
+ 
+ cell  602160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.51396E-05 0.0080
+ 
+ cell  603100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.11810E-05 0.0090
+ 
+ cell  603110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.81525E-05 0.0079
+ 
+ cell  603120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.17120E-05 0.0073
+ 
+ cell  603130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.47381E-05 0.0071
+ 
+ cell  603140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.04800E-05 0.0073
+ 
+ cell  603150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.22670E-05 0.0077
+ 
+ cell  603160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.05593E-05 0.0082
+ 
+ cell  604100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.22488E-05 0.0089
+ 
+ cell  604110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.02226E-05 0.0078
+ 
+ cell  604120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.29266E-05 0.0073
+ 
+ cell  604130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.33380E-05 0.0072
+ 
+ cell  604140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.86053E-05 0.0074
+ 
+ cell  604150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.02806E-05 0.0078
+ 
+ cell  604160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.90984E-05 0.0083
+ 
+ cell  605100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.25588E-05 0.0089
+ 
+ cell  605110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.84724E-05 0.0078
+ 
+ cell  605120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.14284E-05 0.0073
+ 
+ cell  605130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.32223E-05 0.0072
+ 
+ cell  605140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.78416E-05 0.0074
+ 
+ cell  605150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.00895E-05 0.0078
+ 
+ cell  605160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.12046E-05 0.0083
+ 
+ cell  606100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.14878E-05 0.0088
+ 
+ cell  606110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.68464E-05 0.0077
+ 
+ cell  606120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.96685E-05 0.0071
+ 
+ cell  606130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.35203E-05 0.0070
+ 
+ cell  606140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.92800E-05 0.0072
+ 
+ cell  606150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.26601E-05 0.0075
+ 
+ cell  606160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.17986E-05 0.0080
+ 
+ cell  607100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.66898E-05 0.0086
+ 
+ cell  607110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.50696E-05 0.0075
+ 
+ cell  607120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.24056E-05 0.0069
+ 
+ cell  607130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.87414E-05 0.0067
+ 
+ cell  607140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.49416E-05 0.0068
+ 
+ cell  607150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.40948E-05 0.0072
+ 
+ cell  607160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.97309E-05 0.0078
+ 
+ cell  608100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.08311E-05 0.0081
+ 
+ cell  608110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.04952E-05 0.0071
+ 
+ cell  608120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.57928E-05 0.0065
+ 
+ cell  608130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.03224E-04 0.0064
+ 
+ cell  608140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00389E-04 0.0064
+ 
+ cell  608150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.84295E-05 0.0068
+ 
+ cell  608160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.00685E-05 0.0076
+ 
+ cell  609100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.12566E-05 0.0076
+ 
+ cell  609110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.39110E-05 0.0067
+ 
+ cell  609120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.12632E-04 0.0062
+ 
+ cell  609130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.22022E-04 0.0059
+ 
+ cell  609140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.17322E-04 0.0060
+ 
+ cell  609150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00971E-04 0.0064
+ 
+ cell  609160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.99889E-05 0.0071
+ 
+ cell  611100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.01194E-05 0.0071
+ 
+ cell  611110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.06912E-04 0.0063
+ 
+ cell  611120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27812E-04 0.0058
+ 
+ cell  611130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.37332E-04 0.0056
+ 
+ cell  611140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.32831E-04 0.0057
+ 
+ cell  611150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.15090E-04 0.0061
+ 
+ cell  611160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.84235E-05 0.0068
+ 
+ cell  612100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.81037E-05 0.0071
+ 
+ cell  612110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.03963E-04 0.0062
+ 
+ cell  612120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.25006E-04 0.0057
+ 
+ cell  612130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.35744E-04 0.0055
+ 
+ cell  612140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.29710E-04 0.0056
+ 
+ cell  612150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.10494E-04 0.0060
+ 
+ cell  612160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.52868E-05 0.0068
+ 
+ cell  613100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.54946E-05 0.0070
+ 
+ cell  613110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.14916E-04 0.0061
+ 
+ cell  613120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38623E-04 0.0056
+ 
+ cell  613130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.48663E-04 0.0054
+ 
+ cell  613140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.42112E-04 0.0055
+ 
+ cell  613150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.21370E-04 0.0060
+ 
+ cell  613160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.16645E-05 0.0067
+ 
+ cell  614100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.89170E-05 0.0068
+ 
+ cell  614110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20536E-04 0.0060
+ 
+ cell  614120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.48172E-04 0.0055
+ 
+ cell  614130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.57961E-04 0.0053
+ 
+ cell  614140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.49957E-04 0.0054
+ 
+ cell  614150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27851E-04 0.0058
+ 
+ cell  614160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.66768E-05 0.0066
+ 
+ cell  615100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.96301E-05 0.0068
+ 
+ cell  615110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.20931E-04 0.0059
+ 
+ cell  615120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.45414E-04 0.0054
+ 
+ cell  615130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.55015E-04 0.0053
+ 
+ cell  615140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.47634E-04 0.0054
+ 
+ cell  615150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.25932E-04 0.0058
+ 
+ cell  615160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.59776E-05 0.0066
+ 
+ cell  616100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.24010E-05 0.0067
+ 
+ cell  616110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.25079E-04 0.0058
+ 
+ cell  616120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.50894E-04 0.0054
+ 
+ cell  616130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.61406E-04 0.0052
+ 
+ cell  616140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.55853E-04 0.0053
+ 
+ cell  616150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31816E-04 0.0057
+ 
+ cell  616160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.00464E-04 0.0065
+ 
+ cell  617100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.49956E-05 0.0067
+ 
+ cell  617110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27500E-04 0.0058
+ 
+ cell  617120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.53285E-04 0.0053
+ 
+ cell  617130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.64722E-04 0.0052
+ 
+ cell  617140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.58610E-04 0.0053
+ 
+ cell  617150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.33557E-04 0.0057
+ 
+ cell  617160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.01215E-04 0.0064
+ 
+ cell  618100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.62427E-05 0.0067
+ 
+ cell  618110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.28195E-04 0.0058
+ 
+ cell  618120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.56057E-04 0.0053
+ 
+ cell  618130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.64086E-04 0.0052
+ 
+ cell  618140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.57527E-04 0.0053
+ 
+ cell  618150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.34856E-04 0.0057
+ 
+ cell  618160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.01432E-04 0.0065
+ 
+ cell  619100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.15217E-05 0.0067
+ 
+ cell  619110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.23967E-04 0.0059
+ 
+ cell  619120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.46585E-04 0.0054
+ 
+ cell  619130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.56467E-04 0.0052
+ 
+ cell  619140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.51220E-04 0.0053
+ 
+ cell  619150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.28034E-04 0.0058
+ 
+ cell  619160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.91044E-05 0.0065
+ 
+ cell  620100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.63225E-05 0.0068
+ 
+ cell  620110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.16089E-04 0.0059
+ 
+ cell  620120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.38915E-04 0.0054
+ 
+ cell  620130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.47181E-04 0.0052
+ 
+ cell  620140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.43574E-04 0.0053
+ 
+ cell  620150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.23909E-04 0.0057
+ 
+ cell  620160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.56039E-05 0.0065
+ 
+ cell  621100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.80498E-05 0.0068
+ 
+ cell  621110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.19039E-04 0.0060
+ 
+ cell  621120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.41615E-04 0.0055
+ 
+ cell  621130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.52227E-04 0.0053
+ 
+ cell  621140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.47485E-04 0.0054
+ 
+ cell  621150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27141E-04 0.0058
+ 
+ cell  621160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.58269E-05 0.0066
+ 
+ cell  622100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.12146E-05 0.0070
+ 
+ cell  622110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.08478E-04 0.0062
+ 
+ cell  622120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.28772E-04 0.0057
+ 
+ cell  622130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.39539E-04 0.0055
+ 
+ cell  622140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.34827E-04 0.0055
+ 
+ cell  622150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.17933E-04 0.0060
+ 
+ cell  622160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.08102E-05 0.0067
+ 
+ cell  623100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.70964E-05 0.0074
+ 
+ cell  623110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.06060E-04 0.0064
+ 
+ cell  623120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.29825E-04 0.0058
+ 
+ cell  623130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.39096E-04 0.0056
+ 
+ cell  623140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.35823E-04 0.0057
+ 
+ cell  623150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.18520E-04 0.0061
+ 
+ cell  623160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.09167E-05 0.0068
+ 
+ cell  624100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.08755E-05 0.0077
+ 
+ cell  624110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.73808E-05 0.0067
+ 
+ cell  624120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.19826E-04 0.0061
+ 
+ cell  624130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.31166E-04 0.0058
+ 
+ cell  624140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.27669E-04 0.0059
+ 
+ cell  624150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.12412E-04 0.0062
+ 
+ cell  624160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.77365E-05 0.0069
+ 
+ cell  625100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.40860E-05 0.0081
+ 
+ cell  625110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.71099E-05 0.0070
+ 
+ cell  625120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.07488E-04 0.0064
+ 
+ cell  625130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.16839E-04 0.0061
+ 
+ cell  625140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.18102E-04 0.0061
+ 
+ cell  625150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.04751E-04 0.0064
+ 
+ cell  625160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.27906E-05 0.0071
+ 
+ cell  626100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.64760E-05 0.0083
+ 
+ cell  626110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.55948E-05 0.0073
+ 
+ cell  626120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.20831E-05 0.0066
+ 
+ cell  626130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.96073E-05 0.0064
+ 
+ cell  626140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.02031E-04 0.0063
+ 
+ cell  626150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.29015E-05 0.0066
+ 
+ cell  626160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.51543E-05 0.0072
+ 
+ cell  627100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.73355E-05 0.0085
+ 
+ cell  627110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.78829E-05 0.0074
+ 
+ cell  627120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.48527E-05 0.0068
+ 
+ cell  627130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.04737E-04 0.0065
+ 
+ cell  627140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.05032E-04 0.0064
+ 
+ cell  627150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.42398E-05 0.0067
+ 
+ cell  627160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.60905E-05 0.0074
+ 
+ cell  628100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.58104E-05 0.0086
+ 
+ cell  628110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.52273E-05 0.0075
+ 
+ cell  628120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.06638E-05 0.0068
+ 
+ cell  628130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.98475E-05 0.0065
+ 
+ cell  628140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 1.01110E-04 0.0065
+ 
+ cell  628150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.11747E-05 0.0068
+ 
+ cell  628160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.36760E-05 0.0075
+ 
+ cell  629100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 5.19988E-05 0.0088
+ 
+ cell  629110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.05394E-05 0.0076
+ 
+ cell  629120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.42667E-05 0.0070
+ 
+ cell  629130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.26174E-05 0.0067
+ 
+ cell  629140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 9.40647E-05 0.0067
+ 
+ cell  629150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.51495E-05 0.0070
+ 
+ cell  629160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.87741E-05 0.0076
+ 
+ cell  630100                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 4.81916E-05 0.0091
+ 
+ cell  630110                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.30222E-05 0.0080
+ 
+ cell  630120                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 7.72050E-05 0.0073
+ 
+ cell  630130                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.37720E-05 0.0070
+ 
+ cell  630140                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.43882E-05 0.0070
+ 
+ cell  630150                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 8.09008E-05 0.0071
+ 
+ cell  630160                                                                                                                          
+ multiplier bin:   1.00000E+00      2011          -6                                                                                   
+                 6.82078E-05 0.0077
