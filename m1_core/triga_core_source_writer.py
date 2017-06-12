@@ -3,35 +3,49 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-F = open('input/pos.txt', 'r').readlines()
-stuff = [i[:-1] for i in F]
-things = np.array([(j[16:26], j[27:37]) for j in stuff]).astype(float)
-xpos = things[:,0]
-ypos = things[:,1]
+
+def cardWriter(card, data):  
+    '''
+    Function: cardWriter
+    
+    This will write multiline cards for SI and SP distributions for mcnp inputs
+    
+    Input Data:
+        card - name and number of the card
+        data array - a numpy array containing the data you'd like placed in the card.
+        Outputs:
+            a string that can be copied and pasted into an mcnp input file
+    '''
+    s = '{}   '.format(card)
+    empty_card = '   ' + ' ' * len(card)
+    elements_per_row = 5
+    row_counter = 0
+    mystring = '{:6}  ' if data.dtype in ['int32', 'int64'] else '{:.6e}  '
+    for d in data:
+        s += mystring.format(d)
+        row_counter += 1
+        if row_counter == elements_per_row:
+            row_counter = 0
+            s += '\n{}'.format(empty_card)
+    s += '\n'
+    return s
+
+positions = np.loadtxt('input/pos.txt')
+print positions [0]
 
 
-G = open('input/mag.txt', 'r').readlines()
-stuff = [i[:-1] for i in G]
-doug = np.array([(j[17:28]) for j in stuff])
-ronald = np.array([(k[7:13]) for k in stuff])
+mag_file = open('input/mag.txt', 'r').readlines()
+mag = np.array([line.split()[0] for i, line in enumerate(mag_file) if i % 4 == 2]).astype(float)
+print mag
 
-mag = []
-for nn in range(len(doug)):
-    if ((nn+2) % 4 == 0):
-        mag.append(doug[nn])
-mag = np.array(mag).astype(float) * 10000
-
-cel = []
-for mm in range(len(ronald)):
-    if ((mm) % 4 == 0):
-        np.array(cel.append(ronald[mm])).astype(float)
-        
 rodmag = []
 for ii in range(len(mag)/7):
     summa = 0
     for jj in range(7):
         summa += mag[(7 * ii) + jj]
     rodmag.append(summa)
+print len(rodmag)
+mag = mag.reshape(-1, 7)
 
 axlen = (2 * 19.051) / 7
 axdiv=[]
@@ -47,43 +61,19 @@ s += 'SDEF ERG=D1 RAD=D2  AXS=0 0 1  POS=D3  EXT=FPOS=D5 \n'
 s += 'SP1 -3\n'
 s += 'SI2   0  1.8669\n'
 s += 'SP2 -21  1\n'
+s += cardWriter('SI3  L', positions.flatten())
+s += cardWriter('SP3   ', np.array(rodmag))
 
-card = ''
-
-for xx in range(len(xpos) / 2):
-    if (xx == 0):
-        card = 'SI3  L'
-    else:
-        card = '      '
-    s += '{}   {:10.6f} {:10.6f}  0.0000     {:10.6f} {:10.6f}  0.0000\n'.format(card, xpos[xx * 2], ypos[xx*2], xpos[(xx*2) + 1], ypos[(xx*2) + 1])
-s += '{}   {:10.6f} {:10.6f}  0.0000\n'.format(card, xpos[len(xpos) - 1], ypos[len(ypos) - 1])
-
-for yy in range(len(xpos) / 5):
-    if (yy == 0):
-        card = 'SP3   '
-    else:
-        card = '      '
-    s += '{}   {:10.6f} {:10.6f} {:10.6f} {:10.6f} {:10.6f}\n'.format(card, rodmag[yy * 5], rodmag[yy * 5 + 1], rodmag[yy * 5 + 2], rodmag[yy * 5 + 3], rodmag[yy * 5 + 4])
-
-num = np.array(range(85)) + 100
-
-for zz in range(len(num) / 5):
-    if (zz == 0):
-        card = 'DS5  S'
-    else:
-        card = '      '
-    s += '{}   {}  {}  {}  {}  {}\n'.format(card, num[zz * 5], num[zz * 5 + 1], num[zz * 5 + 2], num[zz * 5 + 3], num[zz * 5 + 4])
+position_number = np.array(range(len(positions[:,0]))) + 100
+s += cardWriter('DS5  S', position_number)
 
 
-for aa in range(len(num)):
-    card = 'SI{}  H'.format(num[aa])
-    s += '{}   {:10.6f} {:10.6f} {:10.6f} {:10.6f}\n'.format(card, axdiv[0], axdiv[1], axdiv[2], axdiv[3])
-    s += '           {:10.6f} {:10.6f} {:10.6f} {:10.6f}\n'.format(axdiv[4], axdiv[5], axdiv[6], axdiv[7])
-    card = 'SP{}  D'.format(num[aa])
-    s += '{}     0.000000 {:10.6f} {:10.6f} {:10.6f}\n'.format(card, mag[aa * 7 + 0], mag[aa * 7 + 1], mag[aa * 7 + 2])
-    s += '           {:10.6f} {:10.6f} {:10.6f} {:10.6f}\n'.format(mag[aa * 7 + 3], mag[aa * 7 + 4], mag[aa * 7 + 5], mag[aa * 7 + 6])
+for pos in range(len(position_number)):
+    s += cardWriter('SI{}  H'.format(pos), np.array(axdiv))
+    s += cardWriter('SP{}  D'.format(pos), np.concatenate([0], mag[pos]))
+print s
     
-with open('output/core_source.txt', 'w') as H:
+with open('output/core_source_altered.txt', 'w') as H:
             H.write(s)
 
 plt.figure(0, figsize=(4,4))
