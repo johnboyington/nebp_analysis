@@ -54,7 +54,7 @@ position_number = np.array(range(len(positions[:,0]))) + 101
 
 #write the source as a string and write it as a file
 s  = 'c ******************************************************************************\n'
-s += 'c                         TRIG CORE SOURCE SPECIFICATION                        \n'
+s += 'c                         TRIGA CORE SOURCE SPECIFICATION                        \n'
 s += 'c ******************************************************************************\n'
 s += 'SDEF ERG=D1 RAD=D2  AXS=0 0 1  POS=D3  EXT=FPOS=D5 \n'
 s += 'SP1  -3\n'
