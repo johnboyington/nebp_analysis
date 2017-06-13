@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def cardWriter(card, data):  
+def cardWriter(card, data, elements):  
     '''
     Function: cardWriter
     
@@ -18,66 +18,58 @@ def cardWriter(card, data):
     '''
     s = '{}   '.format(card)
     empty_card = '   ' + ' ' * len(card)
-    elements_per_row = 5
+    elements_per_row = elements
     row_counter = 0
-    mystring = '{:6}  ' if data.dtype in ['int32', 'int64'] else '{:.6e}  '
-    for d in data:
-        s += mystring.format(d)
+    element = '{:6}  ' if data.dtype in ['int32', 'int64'] else '{:14.6e}  '
+    for i, d in enumerate(data):
+        s += element.format(d)
         row_counter += 1
-        if row_counter == elements_per_row:
+        if row_counter == elements_per_row and i + 1 != len(data):
             row_counter = 0
             s += '\n{}'.format(empty_card)
-    s += '\n'
+    s += '\n' 
     return s
 
+#load in rod position data
 positions = np.loadtxt('input/pos.txt')
-print positions [0]
 
-
+# load in magnitudes from mcnp output
 mag_file = open('input/mag.txt', 'r').readlines()
-mag = np.array([line.split()[0] for i, line in enumerate(mag_file) if i % 4 == 2]).astype(float)
-print mag
+mag = np.array([line.split()[0] for i, line in enumerate(mag_file) if i % 4 == 2]).astype(float).reshape(-1,7)
 
-rodmag = []
-for ii in range(len(mag)/7):
-    summa = 0
-    for jj in range(7):
-        summa += mag[(7 * ii) + jj]
-    rodmag.append(summa)
-print len(rodmag)
-mag = mag.reshape(-1, 7)
+#calculate the magnitude of each individual rod by summing each segment
+rodmag = np.sum(mag, axis= 1)
 
-axlen = (2 * 19.051) / 7
-axdiv=[]
-for kk in range(8):
-    axdiv.append(-19.051 + (axlen * kk))
+#try to redo axdiv calculation
+axial_divisions = (np.array(range(8)) - 3.5) * (2 * 19.051) / 7.
+
+#create distributed source numbers
+position_number = np.array(range(len(positions[:,0]))) + 101
 
 
-s = ''
-s += 'c ******************************************************************************\n'
-s += 'c                             SOURCE SPECIFICATION                              \n'
+#write the source as a string and write it as a file
+s  = 'c ******************************************************************************\n'
+s += 'c                         TRIG CORE SOURCE SPECIFICATION                        \n'
 s += 'c ******************************************************************************\n'
 s += 'SDEF ERG=D1 RAD=D2  AXS=0 0 1  POS=D3  EXT=FPOS=D5 \n'
-s += 'SP1 -3\n'
+s += 'SP1  -3\n'
 s += 'SI2   0  1.8669\n'
 s += 'SP2 -21  1\n'
-s += cardWriter('SI3  L', positions.flatten())
-s += cardWriter('SP3   ', np.array(rodmag))
+s += cardWriter('SI3  L', positions.flatten(), 3)
+s += cardWriter('SP3   ', rodmag, 4)
 
-position_number = np.array(range(len(positions[:,0]))) + 100
-s += cardWriter('DS5  S', position_number)
+s += cardWriter('DS5  S', position_number, 8)
 
 
-for pos in range(len(position_number)):
-    s += cardWriter('SI{}  H'.format(pos), np.array(axdiv))
-    s += cardWriter('SP{}  D'.format(pos), np.concatenate([0], mag[pos]))
-print s
+for i, pos in enumerate(position_number):
+    s += cardWriter('SI{}  H'.format(pos), axial_divisions, 4)
+    s += cardWriter('SP{}  D'.format(pos), np.insert(mag[i], 0, 0), 4)
     
-with open('output/core_source_altered.txt', 'w') as H:
+with open('output/core_source.txt', 'w') as H:
             H.write(s)
 
 plt.figure(0, figsize=(4,4))
 plt.xlim(-21, 21)
 plt.ylim(-21, 21)
-plt.scatter(xpos, ypos, s=250)
+plt.scatter(positions[:,0], positions[:,1], s=250)
 plt.savefig('output/source_rod_locations.png')
