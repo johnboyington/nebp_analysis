@@ -1,5 +1,10 @@
-#this code will help write the cards for the axial dependant fission rate triga calc
+'''
+Writes the SDEF source used in mcnp for the TRIGA reactor core.
 
+Inputs - fission rate values from the KCODE problem for each fuel element segment.
+Outputs - SDEF source cards with both fuel element location and axial distribution.
+
+'''
 import numpy as np
 import matplotlib.pyplot as plt
 
