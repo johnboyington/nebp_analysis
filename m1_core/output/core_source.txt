@@ -1,5 +1,5 @@
 c ******************************************************************************
-c                         TRIG CORE SOURCE SPECIFICATION                        
+c                         TRIGA CORE SOURCE SPECIFICATION                        
 c ******************************************************************************
 SDEF ERG=D1 RAD=D2  AXS=0 0 1  POS=D3  EXT=FPOS=D5 
 SP1  -3
