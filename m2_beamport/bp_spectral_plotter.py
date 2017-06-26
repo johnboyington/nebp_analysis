@@ -14,6 +14,7 @@ def makeStep(x,y):
 #load neutron simulation data
 n_data = np.loadtxt('input/ndata.txt')
 g_data = np.loadtxt('input/gdata.txt')
+n_data_total = np.loadtxt('input/ndata_total.txt')[1:]
 
 
 #determine how many energy groups and cosine groups there are
@@ -45,6 +46,9 @@ print 'This data has {} cosine groups.'.format(g_number_of_cos_groups - 1)
 #energy groups
 erg_groups = n_data[0:number_of_erg_groups,0]
 erg_group_width = erg_groups[1:] - erg_groups[:-1]
+erg_group_midpoints = erg_groups[:-1] - erg_groups[1:]
+erg_group_midpoints = np.append(erg_groups[1:] + (erg_group_midpoints / 2.), [0])
+print len(erg_group_midpoints), len(n_data_total)
 
 #energy groups
 g_erg_groups = g_data[0:g_number_of_erg_groups,0]
@@ -94,9 +98,16 @@ plt.yscale('log')
 plt.xlim(1E-8, 1E1)
 plt.xticks(np.logspace(-8, 1, 10))
 plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
-plt.plot(makeStep(erg_groups, 2.4 * np.sum(n_flux, axis=0))[0], makeStep(erg_groups, np.sum(n_flux, axis=0) / erg_group_width)[1],
+plt.plot(makeStep(erg_groups, 2.4 * n_data_total[:,1])[0], 
+         makeStep(erg_groups, 2.4 * n_data_total[:,1] / erg_group_width)[1],
          label='Neutron Spectrum', color='mediumblue')
-plt.plot(makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0))[0], makeStep(g_erg_groups, np.sum(g_flux, axis=0) / g_erg_group_width)[1],
+plt.errorbar(erg_group_midpoints[:-1], 
+             2.4 * n_data_total[:,1] / erg_group_width, 
+             (2.4 * n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
+             color='mediumblue', linestyle="None", capsize=0)
+
+plt.plot(makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0))[0], 
+         makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0) / g_erg_group_width)[1],
          label='Gamma Spectrum', color='goldenrod')
 plt.legend()
 plt.savefig('output_plot/Flux_vs_Energy_Integrated_over_Angle.pdf')
@@ -217,36 +228,36 @@ with open('output_plot/gamma_error_information.txt', 'w') as F:
 #      PLOTS 4 and 100-132
 #               plot flux as a function of energy integrated over angle
 ###############################################################################
-for e in range(number_of_erg_groups):
-    plt.figure(100 + e)
-    plt.xlabel('Angle $deg$')
-    plt.ylabel('Relative Flux')
-    plt.title('Angular PDF of Energy Group {}'.format(number_of_erg_groups - (e + 1)))
-    plt.xlim(0, 90)
-    plt.yscale('log')
-    plt.plot(makeStep(cos_bins, n_flux[:,e])[0], 
-             makeStep(cos_bins, (n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])))[::-1])[1])
-    plt.errorbar(cos_midpoints[0:number_of_cos_groups - 1], 
-                 n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])), 
-                 (n_flux[:,e] / np.sum(n_flux[:,e])) * n_error[:,e],
-                 linestyle="None", capsize=0)
-    plt.savefig('output_plot/angular_dist_for_each_energy_group/angle_dist_group_{}.png'.format(number_of_erg_groups - (e + 1)))
-
-#trying to make a super subplot
-plt.figure(4, figsize=(12,55))
-plt.xlim(0, 90)
-for e in range(number_of_erg_groups - 1):
-    plt.subplot(number_of_erg_groups - 1, 1, e + 1)
-    plt.xlabel('Angle $deg$')
-    plt.ylabel('Relative Flux')
-    plt.title(' Energy Group {}'.format(number_of_erg_groups - (e + 1)))
-    plt.ylim(1E-4, 1)
-    plt.yscale('log')
-    plt.plot(makeStep(cos_bins, n_flux[:,e])[0], 
-             makeStep(cos_bins, (n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])))[::-1])[1])
-    plt.errorbar(cos_midpoints[0:number_of_cos_groups - 1], 
-                 n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])), 
-                 (n_flux[:,e] / np.sum(n_flux[:,e])) * n_error[:,e],
-                 linestyle="None", capsize=0)
-plt.savefig('output_plot/angle_dist.pdf')
+#for e in range(number_of_erg_groups):
+#    plt.figure(100 + e)
+#    plt.xlabel('Angle $deg$')
+#    plt.ylabel('Relative Flux')
+#    plt.title('Angular PDF of Energy Group {}'.format(number_of_erg_groups - (e + 1)))
+#    plt.xlim(0, 90)
+#    plt.yscale('log')
+#    plt.plot(makeStep(cos_bins, n_flux[:,e])[0], 
+#             makeStep(cos_bins, (n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])))[::-1])[1])
+#    plt.errorbar(cos_midpoints[0:number_of_cos_groups - 1], 
+#                 n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])), 
+#                 (n_flux[:,e] / np.sum(n_flux[:,e])) * n_error[:,e],
+#                 linestyle="None", capsize=0)
+#    plt.savefig('output_plot/angular_dist_for_each_energy_group/angle_dist_group_{}.png'.format(number_of_erg_groups - (e + 1)))
+#
+##trying to make a super subplot
+#plt.figure(4, figsize=(12,55))
+#plt.xlim(0, 90)
+#for e in range(number_of_erg_groups - 1):
+#    plt.subplot(number_of_erg_groups - 1, 1, e + 1)
+#    plt.xlabel('Angle $deg$')
+#    plt.ylabel('Relative Flux')
+#    plt.title(' Energy Group {}'.format(number_of_erg_groups - (e + 1)))
+#    plt.ylim(1E-4, 1)
+#    plt.yscale('log')
+#    plt.plot(makeStep(cos_bins, n_flux[:,e])[0], 
+#             makeStep(cos_bins, (n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])))[::-1])[1])
+#    plt.errorbar(cos_midpoints[0:number_of_cos_groups - 1], 
+#                 n_flux[:,e] / (cos_bin_width * np.sum(n_flux[:,e])), 
+#                 (n_flux[:,e] / np.sum(n_flux[:,e])) * n_error[:,e],
+#                 linestyle="None", capsize=0)
+#plt.savefig('output_plot/angle_dist.pdf')
 ###############################################################################

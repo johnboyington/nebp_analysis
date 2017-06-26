@@ -1,7 +1,7 @@
 Neutron Bin Error Information
-324 bins (45.38% of total) have a relative error between 0 and 0.05
-199 bins (27.87% of total) have a relative error between 0.05 and 0.1
-127 bins (17.79% of total) have a relative error between 0.1 and 0.2
- 31 bins (4.34% of total) have a relative error between 0.2 and 0.3
- 20 bins (2.80% of total) have a relative error between 0.3 and 0.4
- 13 bins (1.82% of total) have a relative error between 0.4 and 1.0
+324 bins (44.57% of total) have a relative error between 0 and 0.05
+200 bins (27.51% of total) have a relative error between 0.05 and 0.1
+129 bins (17.74% of total) have a relative error between 0.1 and 0.2
+ 35 bins (4.81% of total) have a relative error between 0.2 and 0.3
+ 22 bins (3.03% of total) have a relative error between 0.3 and 0.4
+ 17 bins (2.34% of total) have a relative error between 0.4 and 1.0
