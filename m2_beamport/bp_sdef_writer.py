@@ -65,7 +65,9 @@ assert len(cos_bins) == number_of_cos_groups
 #convert cosine bin values to radians
 cos_bins_radians = np.cos(cos_bins * (np.pi / 180))
 
-
+total_neutron_flux = 10
+total_gamma_flux = 10
+gn_ratio = total_gamma_flux / total_neutron_flux
 
 ###############################################################################
 #                          SOURCE WRITER

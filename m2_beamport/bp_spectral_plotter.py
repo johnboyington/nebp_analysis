@@ -15,7 +15,7 @@ def makeStep(x,y):
 n_data = np.loadtxt('input/ndata.txt')
 g_data = np.loadtxt('input/gdata.txt')
 n_data_total = np.loadtxt('input/ndata_total.txt')[1:]
-
+g_data_total = np.loadtxt('input/gdata_total.txt')[1:]
 
 #determine how many energy groups and cosine groups there are
 group_counter = 0
@@ -90,12 +90,12 @@ g_cos_bins = g_cos_bins[::-1]
 #      PLOT 1
 #               plot flux as a function of energy integrated over angle
 ###############################################################################
-plt.figure(0)
+plt.figure(0, figsize=(5.5, 4.25))
 plt.xlabel('Energy ($MeV$)')
 plt.ylabel('$\phi$')
 plt.xscale('log')
 plt.yscale('log')
-plt.xlim(1E-8, 1E1)
+plt.xlim(1E-8, 2E1)
 plt.xticks(np.logspace(-8, 1, 10))
 plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
 plt.plot(makeStep(erg_groups, 2.4 * n_data_total[:,1])[0], 
@@ -105,22 +105,29 @@ plt.errorbar(erg_group_midpoints[:-1],
              2.4 * n_data_total[:,1] / erg_group_width, 
              (2.4 * n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
              color='mediumblue', linestyle="None", capsize=0)
-
-plt.plot(makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0))[0], 
-         makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0) / g_erg_group_width)[1],
+plt.plot(makeStep(g_erg_groups, 8.3 * g_data_total[:,1])[0], 
+         makeStep(g_erg_groups, 8.3 * g_data_total[:,1] / g_erg_group_width)[1],
          label='Gamma Spectrum', color='goldenrod')
+plt.errorbar(erg_group_midpoints[:-1], 
+             8.3 * g_data_total[:,1] / g_erg_group_width, 
+             (8.3 * g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2], 
+             color='goldenrod', linestyle="None", capsize=0)
+#plt.plot(makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0))[0], 
+#         makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0) / g_erg_group_width)[1],
+#         label='Gamma Spectrum', color='goldenrod')
 plt.legend()
-plt.savefig('output_plot/Flux_vs_Energy_Integrated_over_Angle.pdf')
-
+plt.savefig('output_plot/Flux_vs_Energy_Integrated_over_Angle.png', dpi=200)
+plt.close()
 
 ###############################################################################
 #      PLOT 2
 #               plot flux as a function of angle integrated over energy
 ###############################################################################
-plt.figure(1)
+plt.figure(1, figsize=(5.5, 4.25))
 plt.xlabel('Angle ($deg$)')
-plt.ylabel('Probability')
-plt.xlim(0, 90)
+plt.ylabel('Probability Density')
+#plt.yscale('log')
+plt.xlim(0, 10)
 plt.plot(makeStep(cos_bins, np.sum(n_flux, axis=1))[0], 
          makeStep(cos_bins, (np.sum(n_flux, axis=1) / (cos_bin_width * np.sum(n_flux)))[::-1])[1],
          label='Neutron Spectrum', color='mediumblue')
@@ -128,7 +135,8 @@ plt.plot(makeStep(g_cos_bins, np.sum(g_flux, axis=1))[0],
          makeStep(g_cos_bins, (np.sum(g_flux, axis=1) / (g_cos_bin_width * np.sum(g_flux)))[::-1])[1],
          label='Gamma Spectrum', color='goldenrod')
 plt.legend()
-plt.savefig('output_plot/Flux_vs_Angle_Integrated_over_Energy.pdf')
+plt.savefig('output_plot/Flux_vs_Angle_Integrated_over_Energy.png', dpi=200)
+plt.close()
 
 
 
@@ -143,7 +151,7 @@ plt.title('Relative Neutron Error Associated with Each Bin')
 plt.imshow(n_error[::-1,::-1], cmap='plasma', vmin=0, vmax=1.0)
 plt.colorbar()
 plt.savefig('output_plot/neutron_bin_error.png')
-
+plt.close()
 
 
 ###############################################################################
@@ -157,6 +165,7 @@ plt.title('Relative Neutron Error Associated with Each Bin')
 plt.imshow(n_error[::-1,::-1], cmap='plasma', vmin=0, vmax=np.max(n_error))
 plt.colorbar()
 plt.savefig('output_plot/neutron_bin_error_relative.png')
+plt.close()
 
 ###############################################################################
 #      PLOT 5
@@ -169,7 +178,7 @@ plt.title('Relative Gamma Error Associated with Each Bin')
 plt.imshow(g_error[::-1,::-1], cmap='plasma', vmin=0, vmax=1.0)
 plt.colorbar()
 plt.savefig('output_plot/gamma_bin_error.png')
-
+plt.close()
 
 
 ###############################################################################
@@ -183,6 +192,7 @@ plt.title('Relative Gamma Error Associated with Each Bin')
 plt.imshow(g_error[::-1,::-1], cmap='plasma', vmin=0, vmax=np.max(g_error))
 plt.colorbar()
 plt.savefig('output_plot/gamma_bin_error_relative.png')
+plt.close()
 
 ###############################################################################
 #      Error Statistics
