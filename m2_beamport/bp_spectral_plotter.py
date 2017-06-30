@@ -11,6 +11,11 @@ def makeStep(x,y):
     X = np.array([[xx,xx] for xx in np.array(x)]).flatten()[1:-1]
     return X,Y
 
+
+#input power level
+power_level = 250 #W
+
+
 #load neutron simulation data
 n_data = np.loadtxt('input/ndata.txt')
 g_data = np.loadtxt('input/gdata.txt')
@@ -80,37 +85,68 @@ g_width_matrix = np.outer(g_cos_bin_width, g_erg_group_width)
 n_flux_norm = n_flux / width_matrix
 g_flux_norm = g_flux / g_width_matrix
 
+#calculate power normalization coefficient and multiply matrices by that
+tally_area = np.pi * (1.27 ** 2)
+response_thermal = (2.057E5 * 3.63376E-4 ) / (6.242E12) #g * response / (J/Mev)
+n_response_tally = 7.53942E-8
+g_response_tally = 6.90356E-8
+
+
+print 'The energy integrated neutron flux is {:7.5e} cm-2s-2 at {} W'.format((n_response_tally / (response_thermal * tally_area)) * power_level, power_level)
+print 'The energy integrated gamma flux is {:7.5e} cm-2s-2 at {} W'.format(((g_response_tally * (8.3 / 2.54)) / (response_thermal * tally_area)) * power_level, power_level)
+
+Cn = 1 / (response_thermal * tally_area)
+Cg = 1 / (response_thermal * tally_area)
+Cg *= (8.3 / 2.54)
+
+print n_data_total[:,1]
+print Cn
+
+n_flux_norm *= Cn
+g_flux_norm *= Cg
+n_data_total[:,1] *= Cn
+g_data_total[:,1] *= Cg
+
+print n_data_total[:,1]
+
+n_flux_norm *= power_level
+g_flux_norm *= power_level
+n_data_total[:,1] *= power_level
+g_data_total[:,1] *= power_level
+
+print n_data_total[:,1]
+
+
+
 #reverse the cosine bins for the sake of plotting
 cos_bins = cos_bins[::-1]
 g_cos_bins = g_cos_bins[::-1]
-
-
 
 ###############################################################################
 #      PLOT 1
 #               plot flux as a function of energy integrated over angle
 ###############################################################################
 plt.figure(0, figsize=(5.5, 4.25))
-plt.xlabel('Energy ($MeV$)')
-plt.ylabel('$\phi$')
+plt.xlabel('Energy  $MeV$')
+plt.ylabel('$\phi(E)$  $cm^{-2}s^{-1}$')
 plt.xscale('log')
 plt.yscale('log')
 plt.xlim(1E-8, 2E1)
 plt.xticks(np.logspace(-8, 1, 10))
 plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
-plt.plot(makeStep(erg_groups, 2.4 * n_data_total[:,1])[0], 
-         makeStep(erg_groups, 2.4 * n_data_total[:,1] / erg_group_width)[1],
+plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
+         makeStep(erg_groups, n_data_total[:,1] / erg_group_width)[1],
          label='Neutron Spectrum', color='mediumblue')
 plt.errorbar(erg_group_midpoints[:-1], 
-             2.4 * n_data_total[:,1] / erg_group_width, 
-             (2.4 * n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
+             n_data_total[:,1] / erg_group_width, 
+             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
              color='mediumblue', linestyle="None", capsize=0)
-plt.plot(makeStep(g_erg_groups, 8.3 * g_data_total[:,1])[0], 
-         makeStep(g_erg_groups, 8.3 * g_data_total[:,1] / g_erg_group_width)[1],
+plt.plot(makeStep(g_erg_groups, g_data_total[:,1])[0], 
+         makeStep(g_erg_groups, g_data_total[:,1] / g_erg_group_width)[1],
          label='Gamma Spectrum', color='goldenrod')
 plt.errorbar(erg_group_midpoints[:-1], 
-             8.3 * g_data_total[:,1] / g_erg_group_width, 
-             (8.3 * g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2], 
+             g_data_total[:,1] / g_erg_group_width, 
+             (g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2], 
              color='goldenrod', linestyle="None", capsize=0)
 #plt.plot(makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0))[0], 
 #         makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0) / g_erg_group_width)[1],

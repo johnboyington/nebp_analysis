@@ -36,7 +36,7 @@ def cardWriter(card, data):
 
 
 #load neutron simulation data
-n_data = np.loadtxt('input/ndata.txt')
+n_data = np.loadtxt('input/gdata.txt')
 
 
 #determine how many energy groups and cosine groups there are
@@ -80,16 +80,19 @@ s = ''
 s += 'c  ---------------------------------------------------------\n'
 s += 'c                    SOURCE SPECIFICATIONS\n'
 s += 'c  ---------------------------------------------------------\n'
-s += 'SDEF POS=0 0 0 AXS=1 0 0 EXT=0 VEC=1 0 0 ERG=D3 DIR=FERG=D5 RAD=D6 PAR=1\n'
+s += 'SDEF POS=0 0 0 AXS=1 0 0 EXT=0 VEC=1 0 0 ERG=D3 DIR=FERG=D5 RAD=D6 PAR=2\n'
+s += '        WGT={}\n'.format(gn_ratio)
 s += 'SI6   0  1.27\n'
 s += 'SP6 -21  1\n'
 s += cardWriter('SI3 H', erg_groups)
 s += cardWriter('SP3 D', np.append(0, np.sum(n_flux, axis=0)))
 s += cardWriter('DS5 S', dist_source_numbers[1:])
 for e in range(number_of_erg_groups - 1):
+    if np.sum(n_flux[:,e]) == 0 :
+        n_flux[1,e] = 1.0
     s += cardWriter('SI{} H'.format(dist_source_numbers[e] + 1), cos_bins_radians)
     s += cardWriter('SP{} D'.format(dist_source_numbers[e] + 1), np.append(0, n_flux[:,e]))
 
-with open('output_sdef/nsource.txt', 'w') as H:
+with open('output_sdef/gsource.txt', 'w') as H:
     H.write(s)
 ###############################################################################
