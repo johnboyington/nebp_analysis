@@ -21,6 +21,11 @@ n_data = np.loadtxt('input/ndata.txt')
 g_data = np.loadtxt('input/gdata.txt')
 n_data_total = np.loadtxt('input/ndata_total.txt')[1:]
 g_data_total = np.loadtxt('input/gdata_total.txt')[1:]
+n_cos_total = np.loadtxt('input/ncos_total.txt')[1:]
+g_cos_total = np.loadtxt('input/gcos_total.txt')[1:]
+n_filter_data = np.loadtxt('input/filtered_ndata.txt')[1:]
+n_filter_data[:,1] = n_filter_data[:,1] * 7.53942E-8
+
 
 #determine how many energy groups and cosine groups there are
 group_counter = 0
@@ -91,6 +96,11 @@ response_thermal = (2.057E5 * 3.63376E-4 ) / (6.242E12) #g * response / (J/Mev)
 n_response_tally = 7.53942E-8
 g_response_tally = 6.90356E-8
 
+#calc f/t ratio
+print 'Sum1 {}'.format(np.sum(n_data_total[0:47,1]))
+print 'Sum2 {}'.format(np.sum(n_data_total[47:,1]))
+print 'The F/T Ratio is {}'.format(np.sum(n_data_total[0:47,1]) / np.sum(n_data_total[:,1]))
+
 
 print 'The energy integrated neutron flux is {:7.5e} cm-2s-2 at {} W'.format((n_response_tally / (response_thermal * tally_area)) * power_level, power_level)
 print 'The energy integrated gamma flux is {:7.5e} cm-2s-2 at {} W'.format(((g_response_tally * (8.3 / 2.54)) / (response_thermal * tally_area)) * power_level, power_level)
@@ -106,27 +116,91 @@ n_flux_norm *= Cn
 g_flux_norm *= Cg
 n_data_total[:,1] *= Cn
 g_data_total[:,1] *= Cg
-
-print n_data_total[:,1]
+n_filter_data[:,1] *= Cn
 
 n_flux_norm *= power_level
 g_flux_norm *= power_level
 n_data_total[:,1] *= power_level
 g_data_total[:,1] *= power_level
+n_filter_data[:,1] *= power_level
 
-print n_data_total[:,1]
+
 
 
 
 #reverse the cosine bins for the sake of plotting
 cos_bins = cos_bins[::-1]
 g_cos_bins = g_cos_bins[::-1]
+###############################################################################
+#      PLOT 0
+#               spectral comparison
+###############################################################################
+plt.figure(30, figsize=(6, 4.25))
+plt.xlabel('Energy  $MeV$')
+plt.ylabel('$\phi(E)$  $cm^{-2}s^{-1}$')
+plt.xscale('log')
+plt.yscale('log')
+plt.xlim(1E-8, 2E1)
+plt.xticks(np.logspace(-8, 1, 10))
+plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
+plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
+         makeStep(erg_groups, n_data_total[:,1] / erg_group_width)[1],
+         label='Source Spectrum', color='mediumblue')
+plt.errorbar(erg_group_midpoints[:-1], 
+             n_data_total[:,1] / erg_group_width, 
+             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
+             color='mediumblue', linestyle="None", capsize=0)
+plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
+         makeStep(erg_groups, n_filter_data[:,1] / erg_group_width)[1],
+         label='Filtered Spectrum', color='mediumseagreen')
+plt.errorbar(erg_group_midpoints[:-1], 
+             n_filter_data[:,1] / erg_group_width, 
+             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2], 
+             color='mediumseagreen', linestyle="None", capsize=0)
+plt.legend()
+plt.savefig('output_plot/spectral_comparison.png', dpi=200)
+plt.close()
+
+###############################################################################
+#      PLOT 0.5
+#               spectral comparison (lethargy)
+###############################################################################
+
+plt.figure(31, figsize=(6, 4.25))
+plt.xlabel('Energy  $MeV$')
+plt.ylabel('$\phi(E) E$  $MeV cm^{-2}s^{-1}$')
+plt.xscale('log')
+plt.yscale('log')
+plt.xlim(1E-8, 2E1)
+plt.xticks(np.logspace(-8, 1, 10))
+plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
+plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
+         makeStep(erg_groups, erg_group_midpoints[:-1] * n_data_total[:,1] / erg_group_width)[1],
+         label='Source Spectrum', color='mediumblue')
+plt.errorbar(erg_group_midpoints[:-1], 
+              erg_group_midpoints[:-1] * n_data_total[:,1] / erg_group_width, 
+             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2] * erg_group_midpoints[:-1], 
+             color='mediumblue', linestyle="None", capsize=0)
+plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
+         makeStep(erg_groups,  erg_group_midpoints[:-1] * n_filter_data[:,1] / erg_group_width)[1],
+         label='Filtered Spectrum', color='mediumseagreen')
+plt.errorbar(erg_group_midpoints[:-1], 
+              erg_group_midpoints[:-1] * n_filter_data[:,1] / erg_group_width, 
+             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2] *  erg_group_midpoints[:-1], 
+             color='mediumseagreen', linestyle="None", capsize=0)
+plt.legend()
+plt.savefig('output_plot/spectral_comparison_lethargy.png', dpi=200)
+plt.close()
+
+
+
+
 
 ###############################################################################
 #      PLOT 1
 #               plot flux as a function of energy integrated over angle
 ###############################################################################
-plt.figure(0, figsize=(5.5, 4.25))
+plt.figure(0, figsize=(6, 4.25))
 plt.xlabel('Energy  $MeV$')
 plt.ylabel('$\phi(E)$  $cm^{-2}s^{-1}$')
 plt.xscale('log')
@@ -152,14 +226,15 @@ plt.errorbar(erg_group_midpoints[:-1],
 #         makeStep(g_erg_groups, 8.3 * np.sum(g_flux, axis=0) / g_erg_group_width)[1],
 #         label='Gamma Spectrum', color='goldenrod')
 plt.legend()
-plt.savefig('output_plot/Flux_vs_Energy_Integrated_over_Angle.png', dpi=200)
+plt.savefig('output_plot/flux_vs_energy.png', dpi=200)
 plt.close()
+
 
 ###############################################################################
 #      PLOT 2
 #               plot flux as a function of angle integrated over energy
 ###############################################################################
-plt.figure(1, figsize=(5.5, 4.25))
+plt.figure(1, figsize=(6, 4.25))
 plt.xlabel('Angle ($deg$)')
 plt.ylabel('Probability Density')
 #plt.yscale('log')
@@ -167,11 +242,19 @@ plt.xlim(0, 10)
 plt.plot(makeStep(cos_bins, np.sum(n_flux, axis=1))[0], 
          makeStep(cos_bins, (np.sum(n_flux, axis=1) / (cos_bin_width * np.sum(n_flux)))[::-1])[1],
          label='Neutron Spectrum', color='mediumblue')
+plt.errorbar(cos_midpoints[:-1], 
+             (np.sum(n_flux, axis=1) / (cos_bin_width * np.sum(n_flux))),
+             (np.sum(n_flux, axis=1) / (cos_bin_width * np.sum(n_flux))) * n_cos_total[:,1],
+             color='mediumblue', linestyle="None", capsize=0)
 plt.plot(makeStep(g_cos_bins, np.sum(g_flux, axis=1))[0], 
          makeStep(g_cos_bins, (np.sum(g_flux, axis=1) / (g_cos_bin_width * np.sum(g_flux)))[::-1])[1],
          label='Gamma Spectrum', color='goldenrod')
+plt.errorbar(cos_midpoints[:-1], 
+             (np.sum(g_flux, axis=1) / (cos_bin_width * np.sum(g_flux))),
+             (np.sum(g_flux, axis=1) / (cos_bin_width * np.sum(g_flux))) * g_cos_total[:,1],
+             color='goldenrod', linestyle="None", capsize=0)
 plt.legend()
-plt.savefig('output_plot/Flux_vs_Angle_Integrated_over_Energy.png', dpi=200)
+plt.savefig('output_plot/flux_vs_angle.png', dpi=200)
 plt.close()
 
 

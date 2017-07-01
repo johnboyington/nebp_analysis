@@ -70,6 +70,8 @@ total_gamma_flux = 6.90356E-08 * 8.3
 gn_ratio = total_gamma_flux / total_neutron_flux
 print 'The gamma-to-neutron ratio is {}'.format(gn_ratio)
 
+
+
 ###############################################################################
 #                          SOURCE WRITER
 ###############################################################################
