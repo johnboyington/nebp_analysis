@@ -23,27 +23,6 @@ n_data_total = np.loadtxt('input/ndata_total.txt')[1:]
 g_data_total = np.loadtxt('input/gdata_total.txt')[1:]
 n_cos_total = np.loadtxt('input/ncos_total.txt')[1:]
 g_cos_total = np.loadtxt('input/gcos_total.txt')[1:]
-n_filter_data10 = np.loadtxt('input/best10n.txt')[1:]
-n_filter_data10[:,1] = n_filter_data10[:,1] * 7.53942E-8
-g_filter_data10 = np.loadtxt('input/best10p.txt')[1:]
-g_filter_data10[:,1] = g_filter_data10[:,1] * 6.90356E-8
-p_filter_data10 = np.loadtxt('input/best10np.txt')[1:]
-p_filter_data10[:,1] = n_filter_data10[:,1] * 7.53942E-8
-
-n_filter_data20 = np.loadtxt('input/best20n.txt')[1:]
-n_filter_data20[:,1] = n_filter_data20[:,1] * 7.53942E-8
-g_filter_data20 = np.loadtxt('input/best20p.txt')[1:]
-g_filter_data20[:,1] = g_filter_data20[:,1] * 6.90356E-8
-p_filter_data20 = np.loadtxt('input/best20np.txt')[1:]
-p_filter_data20[:,1] = n_filter_data20[:,1] * 7.53942E-8
-
-n_filter_data30 = np.loadtxt('input/best30n.txt')[1:]
-n_filter_data30[:,1] = n_filter_data30[:,1] * 7.53942E-8
-g_filter_data30 = np.loadtxt('input/best30p.txt')[1:]
-g_filter_data30[:,1] = g_filter_data30[:,1] * 6.90356E-8
-p_filter_data30 = np.loadtxt('input/best30np.txt')[1:]
-p_filter_data30[:,1] = n_filter_data30[:,1] * 7.53942E-8
-
 
 
 tally_area = np.pi * (1.27 ** 2)
@@ -54,9 +33,43 @@ n_filtered_tally = 4.40030E-02 * n_response_tally
 g_filtered_tally = 4.04738E-02 * g_response_tally
 
 
-Cn = 2.54 / (200 * 1.60218e-13 * tally_area)
-Cg = 2.54 / (200 * 1.60218e-13 * tally_area)
+Cn = (2.54 * power_level) / (200 * 1.60218e-13 * tally_area)
+Cg = (2.54 * power_level) / (200 * 1.60218e-13 * tally_area)
 Cg *= (8.3 / 2.54)
+
+
+n_filter_data10 = np.loadtxt('input/best10n.txt')[1:]
+n_filter_data10[:,1] = n_filter_data10[:,1] * 7.53942E-8 * Cn
+g_filter_data10 = np.loadtxt('input/best10p.txt')[1:]
+g_filter_data10[:,1] = g_filter_data10[:,1] * 6.90356E-8 * Cn
+p_filter_data10 = np.loadtxt('input/best10np.txt')[1:]
+p_filter_data10[:,1] = p_filter_data10[:,1] * 7.53942E-8 * Cn
+total10n = 3.68534E-02 * 7.53942E-8 * Cn
+total10g = ((3.00960E-02 * 7.53942E-8 * Cn) + (9.02061E-04 * 7.53942E-8 * Cn))
+
+n_filter_data20 = np.loadtxt('input/best20n.txt')[1:]
+n_filter_data20[:,1] = n_filter_data20[:,1] * 7.53942E-8 * Cn
+g_filter_data20 = np.loadtxt('input/best20p.txt')[1:]
+g_filter_data20[:,1] = g_filter_data20[:,1] * 6.90356E-8 * Cn
+p_filter_data20 = np.loadtxt('input/best20np.txt')[1:]
+p_filter_data20[:,1] = p_filter_data20[:,1] * 7.53942E-8 * Cn
+total20n = 4.52384E-03 * 7.53942E-8 * Cn
+total20g = ((2.19333E-03 * 7.53942E-8 * Cn) + (1.51330E-04 * 7.53942E-8 * Cn))
+
+n_filter_data30 = np.loadtxt('input/best30n.txt')[1:]
+n_filter_data30[:,1] = n_filter_data30[:,1] * 7.53942E-8 * Cn
+g_filter_data30 = np.loadtxt('input/best30p.txt')[1:]
+g_filter_data30[:,1] = g_filter_data30[:,1] * 6.90356E-8 * Cn
+p_filter_data30 = np.loadtxt('input/best30np.txt')[1:]
+p_filter_data30[:,1] = p_filter_data30[:,1] * 7.53942E-8 * Cn
+total30n = 2.52511E-04 * 7.53942E-8 * Cn
+total30g = ((5.48461E-05 * 7.53942E-8 * Cn) + (2.11273E-04 * 7.53942E-8 * Cn))
+
+
+
+
+
+
 
 #determine how many energy groups and cosine groups there are
 group_counter = 0
@@ -191,41 +204,46 @@ g_cos_bins = g_cos_bins[::-1]
 #               spectral comparison
 ###############################################################################
 plt.figure(40, figsize=(6, 4.25))
-plt.xlabel('Energy  $MeV$')
-plt.ylabel('$\phi(E)$  $MeV^{-1}cm^{-2}s^{-1}$')
+plt.xlabel('Energy  MeV')
+plt.ylabel('$\phi(E)$  MeV$^{-1}$cm$^{-2}$s$^{-1}$')
 plt.xscale('log')
 plt.yscale('log')
 plt.xlim(1E-8, 2E1)
 plt.xticks(np.logspace(-8, 1, 10))
 plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
+
 plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
          makeStep(erg_groups, n_data_total[:,1] / erg_group_width)[1],
-         label='Unfiltered Neutron', color='mediumblue')
+         label='Unfiltered Spectrum', color='mediumblue')
 plt.errorbar(erg_group_midpoints[:-1], 
              n_data_total[:,1] / erg_group_width, 
              (n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
              color='mediumblue', linestyle="None", capsize=0)
-plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
-         makeStep(erg_groups, n_filter_data[:,1] / erg_group_width)[1],
-         label='Filtered Neutron', color='mediumseagreen')
+
+plt.plot(makeStep(erg_groups, n_filter_data10[:,1])[0], 
+         makeStep(erg_groups, n_filter_data10[:,1] / erg_group_width)[1],
+         label='10cm {:4.3E} cm$^{{-2}}$s$^{{-1}}$'.format(total10n), color='mediumseagreen')
 plt.errorbar(erg_group_midpoints[:-1], 
-             n_filter_data[:,1] / erg_group_width, 
-             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2], 
+             n_filter_data10[:,1] / erg_group_width, 
+             (n_filter_data10[:,1] / erg_group_width) * n_filter_data10[:,2], 
              color='mediumseagreen', linestyle="None", capsize=0)
-plt.plot(makeStep(g_erg_groups, g_data_total[:,1])[0], 
-         makeStep(g_erg_groups, g_data_total[:,1] / g_erg_group_width)[1],
-         label='Unfiltered Gamma', color='goldenrod')
+
+plt.plot(makeStep(erg_groups, n_filter_data20[:,1])[0], 
+         makeStep(erg_groups, n_filter_data20[:,1] / erg_group_width)[1],
+         label='20cm {:4.3E} cm$^{{-2}}$s$^{{-1}}$'.format(total20n), color='sandybrown')
 plt.errorbar(erg_group_midpoints[:-1], 
-             g_data_total[:,1] / g_erg_group_width, 
-             (g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2], 
-               color='goldenrod', linestyle="None", capsize=0)
-plt.plot(makeStep(g_erg_groups, g_filter_data[:,1])[0], 
-         makeStep(g_erg_groups, g_filter_data[:,1] / g_erg_group_width)[1],
-         label='Filtered Gamma', color='navajowhite')
+             n_filter_data20[:,1] / erg_group_width, 
+             (n_filter_data20[:,1] / erg_group_width) * n_filter_data20[:,2], 
+             color='sandybrown', linestyle="None", capsize=0)
+
+plt.plot(makeStep(erg_groups, n_filter_data30[:,1])[0], 
+         makeStep(erg_groups, n_filter_data30[:,1] / erg_group_width)[1],
+         label='30cm {:4.3E} cm$^{{-2}}$s$^{{-1}}$'.format(total30n), color='orangered')
 plt.errorbar(erg_group_midpoints[:-1], 
-             g_filter_data[:,1] / g_erg_group_width, 
-             (g_filter_data[:,1] / g_erg_group_width) * g_filter_data[:,2], 
-             color='navajowhite', linestyle="None", capsize=0,)
+             n_filter_data30[:,1] / erg_group_width, 
+             (n_filter_data30[:,1] / erg_group_width) * n_filter_data30[:,2], 
+             color='orangered', linestyle="None", capsize=0)
+
 plt.legend()
 plt.savefig('output_plot/neutron_comparison.png', dpi=200)
 plt.close()
@@ -244,104 +262,147 @@ plt.close()
 #               spectral comparison
 ###############################################################################
 
-
-
-
-
-
-
-
-
-
-###############################################################################
-#      PLOT 0
-#               spectral comparison
-###############################################################################
-plt.figure(30, figsize=(6, 4.25))
-plt.xlabel('Energy  $MeV$')
-plt.ylabel('$\phi(E)$  $MeV^{-1}cm^{-2}s^{-1}$')
+plt.figure(41, figsize=(6, 4.25))
+plt.xlabel('Energy  MeV')
+plt.ylabel('$\phi(E)$  MeV$^{-1}$cm$^{-2}$s$^{-1}$')
 plt.xscale('log')
 plt.yscale('log')
 plt.xlim(1E-8, 2E1)
 plt.xticks(np.logspace(-8, 1, 10))
 plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
-plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
-         makeStep(erg_groups, n_data_total[:,1] / erg_group_width)[1],
-         label='Unfiltered Neutron', color='mediumblue')
+
+plt.plot(makeStep(erg_groups, g_data_total[:,1])[0], 
+         makeStep(erg_groups, g_data_total[:,1] / erg_group_width)[1],
+         label='Unfiltered Spectrum', color='mediumblue')
 plt.errorbar(erg_group_midpoints[:-1], 
-             n_data_total[:,1] / erg_group_width, 
-             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
-             color='mediumblue', linestyle="None", capsize=0)
-plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
-         makeStep(erg_groups, n_filter_data[:,1] / erg_group_width)[1],
-         label='Filtered Neutron', color='mediumseagreen')
-plt.errorbar(erg_group_midpoints[:-1], 
-             n_filter_data[:,1] / erg_group_width, 
-             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2], 
-             color='mediumseagreen', linestyle="None", capsize=0)
-plt.plot(makeStep(g_erg_groups, g_data_total[:,1])[0], 
-         makeStep(g_erg_groups, g_data_total[:,1] / g_erg_group_width)[1],
-         label='Unfiltered Gamma', color='goldenrod')
-plt.errorbar(erg_group_midpoints[:-1], 
-             g_data_total[:,1] / g_erg_group_width, 
+              g_data_total[:,1] / g_erg_group_width, 
              (g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2], 
-               color='goldenrod', linestyle="None", capsize=0)
-plt.plot(makeStep(g_erg_groups, g_filter_data[:,1])[0], 
-         makeStep(g_erg_groups, g_filter_data[:,1] / g_erg_group_width)[1],
-         label='Filtered Gamma', color='navajowhite')
-plt.errorbar(erg_group_midpoints[:-1], 
-             g_filter_data[:,1] / g_erg_group_width, 
-             (g_filter_data[:,1] / g_erg_group_width) * g_filter_data[:,2], 
-             color='navajowhite', linestyle="None", capsize=0,)
-plt.legend()
-plt.savefig('output_plot/spectral_comparison.png', dpi=200)
-plt.close()
-
-###############################################################################
-#      PLOT 0.5
-#               spectral comparison (lethargy)
-###############################################################################
-
-plt.figure(31, figsize=(6, 4.25))
-plt.xlabel('Energy  $MeV$')
-plt.ylabel('$\phi(E) E$  $cm^{-2}s^{-1}$')
-plt.xscale('log')
-plt.yscale('log')
-plt.xlim(1E-8, 2E1)
-plt.xticks(np.logspace(-8, 1, 10))
-plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
-plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
-         makeStep(erg_groups, erg_group_midpoints[:-1] * n_data_total[:,1] / erg_group_width)[1],
-         label='Source Spectrum', color='mediumblue')
-plt.errorbar(erg_group_midpoints[:-1], 
-              erg_group_midpoints[:-1] * n_data_total[:,1] / erg_group_width, 
-             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2] * erg_group_midpoints[:-1], 
              color='mediumblue', linestyle="None", capsize=0)
-plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
-         makeStep(erg_groups,  erg_group_midpoints[:-1] * n_filter_data[:,1] / erg_group_width)[1],
-         label='Filtered Spectrum', color='mediumseagreen')
+
+plt.plot(makeStep(erg_groups, g_filter_data10[:,1])[0], 
+         makeStep(erg_groups, (g_filter_data10[:,1] + p_filter_data10[:,1]) / erg_group_width)[1],
+         label='10cm {:4.3E} cm$^{{-2}}$s$^{{-1}}$'.format(total10g), color='mediumseagreen')
 plt.errorbar(erg_group_midpoints[:-1], 
-              erg_group_midpoints[:-1] * n_filter_data[:,1] / erg_group_width, 
-             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2] *  erg_group_midpoints[:-1], 
+             (g_filter_data10[:,1] + p_filter_data10[:,1]) / erg_group_width, 
+             (g_filter_data10[:,1] / erg_group_width) * g_filter_data10[:,2], 
              color='mediumseagreen', linestyle="None", capsize=0)
 
-plt.plot(makeStep(g_erg_groups, g_data_total[:,1])[0], 
-         makeStep(g_erg_groups, erg_group_midpoints[:-1] * g_data_total[:,1] / g_erg_group_width)[1],
-         label='Source Spectrum', color='goldenrod')
+plt.plot(makeStep(erg_groups, g_filter_data20[:,1])[0], 
+         makeStep(erg_groups, (g_filter_data20[:,1] + p_filter_data20[:,1]) / erg_group_width)[1],
+         label='20cm {:4.3E} cm$^{{-2}}$s$^{{-1}}$'.format(total20g), color='sandybrown')
 plt.errorbar(erg_group_midpoints[:-1], 
-              erg_group_midpoints[:-1] * g_data_total[:,1] / g_erg_group_width, 
-             (g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2] * erg_group_midpoints[:-1], 
-             color='goldenrod', linestyle="None", capsize=0)
-plt.plot(makeStep(g_erg_groups, g_filter_data[:,1])[0], 
-         makeStep(g_erg_groups,  erg_group_midpoints[:-1] * g_filter_data[:,1] / g_erg_group_width)[1],
-         label='Filtered Spectrum', color='navajowhite')
+             (g_filter_data20[:,1] + p_filter_data20[:,1]) / erg_group_width, 
+             (g_filter_data20[:,1] / erg_group_width) * g_filter_data20[:,2], 
+             color='sandybrown', linestyle="None", capsize=0)
+
+plt.plot(makeStep(erg_groups, g_filter_data30[:,1])[0], 
+         makeStep(erg_groups, (g_filter_data30[:,1] + p_filter_data30[:,1]) / erg_group_width)[1],
+         label='30cm {:4.3E} cm$^{{-2}}$s$^{{-1}}$'.format(total30g), color='orangered')
 plt.errorbar(erg_group_midpoints[:-1], 
-              erg_group_midpoints[:-1] * g_filter_data[:,1] / g_erg_group_width, 
-             (g_filter_data[:,1] / g_erg_group_width) * g_filter_data[:,2] *  erg_group_midpoints[:-1], 
-             color='navajowhite', linestyle="None", capsize=0)
+             (g_filter_data30[:,1] + p_filter_data30[:,1]) / erg_group_width, 
+             (g_filter_data30[:,1] / erg_group_width) * g_filter_data30[:,2], 
+             color='orangered', linestyle="None", capsize=0)
+
 plt.legend()
-plt.savefig('output_plot/spectral_comparison_lethargy.png', dpi=200)
+plt.savefig('output_plot/gamma_comparison.png', dpi=200)
 plt.close()
+
+
+
+
+
+
+
+
+################################################################################
+##      PLOT 0
+##               spectral comparison
+################################################################################
+#plt.figure(30, figsize=(6, 4.25))
+#plt.xlabel('Energy  $MeV$')
+#plt.ylabel('$\phi(E)$  $MeV^{-1}cm^{-2}s^{-1}$')
+#plt.xscale('log')
+#plt.yscale('log')
+#plt.xlim(1E-8, 2E1)
+#plt.xticks(np.logspace(-8, 1, 10))
+#plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
+#plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
+#         makeStep(erg_groups, n_data_total[:,1] / erg_group_width)[1],
+#         label='Unfiltered Neutron', color='mediumblue')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#             n_data_total[:,1] / erg_group_width, 
+#             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2], 
+#             color='mediumblue', linestyle="None", capsize=0)
+#plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
+#         makeStep(erg_groups, n_filter_data[:,1] / erg_group_width)[1],
+#         label='Filtered Neutron', color='mediumseagreen')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#             n_filter_data[:,1] / erg_group_width, 
+#             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2], 
+#             color='mediumseagreen', linestyle="None", capsize=0)
+#plt.plot(makeStep(g_erg_groups, g_data_total[:,1])[0], 
+#         makeStep(g_erg_groups, g_data_total[:,1] / g_erg_group_width)[1],
+#         label='Unfiltered Gamma', color='goldenrod')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#             g_data_total[:,1] / g_erg_group_width, 
+#             (g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2], 
+#               color='goldenrod', linestyle="None", capsize=0)
+#plt.plot(makeStep(g_erg_groups, g_filter_data[:,1])[0], 
+#         makeStep(g_erg_groups, g_filter_data[:,1] / g_erg_group_width)[1],
+#         label='Filtered Gamma', color='navajowhite')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#             g_filter_data[:,1] / g_erg_group_width, 
+#             (g_filter_data[:,1] / g_erg_group_width) * g_filter_data[:,2], 
+#             color='navajowhite', linestyle="None", capsize=0,)
+#plt.legend()
+#plt.savefig('output_plot/spectral_comparison.png', dpi=200)
+#plt.close()
+#
+################################################################################
+##      PLOT 0.5
+##               spectral comparison (lethargy)
+################################################################################
+#
+#plt.figure(31, figsize=(6, 4.25))
+#plt.xlabel('Energy  $MeV$')
+#plt.ylabel('$\phi(E) E$  $cm^{-2}s^{-1}$')
+#plt.xscale('log')
+#plt.yscale('log')
+#plt.xlim(1E-8, 2E1)
+#plt.xticks(np.logspace(-8, 1, 10))
+#plt.tick_params(axis='both', which='minor', bottom='off', top='off', left='off', right='off', labelbottom='off')
+#plt.plot(makeStep(erg_groups, n_data_total[:,1])[0], 
+#         makeStep(erg_groups, erg_group_midpoints[:-1] * n_data_total[:,1] / erg_group_width)[1],
+#         label='Source Spectrum', color='mediumblue')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#              erg_group_midpoints[:-1] * n_data_total[:,1] / erg_group_width, 
+#             (n_data_total[:,1] / erg_group_width) * n_data_total[:,2] * erg_group_midpoints[:-1], 
+#             color='mediumblue', linestyle="None", capsize=0)
+#plt.plot(makeStep(erg_groups, n_filter_data[:,1])[0], 
+#         makeStep(erg_groups,  erg_group_midpoints[:-1] * n_filter_data[:,1] / erg_group_width)[1],
+#         label='Filtered Spectrum', color='mediumseagreen')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#              erg_group_midpoints[:-1] * n_filter_data[:,1] / erg_group_width, 
+#             (n_filter_data[:,1] / erg_group_width) * n_filter_data[:,2] *  erg_group_midpoints[:-1], 
+#             color='mediumseagreen', linestyle="None", capsize=0)
+#
+#plt.plot(makeStep(g_erg_groups, g_data_total[:,1])[0], 
+#         makeStep(g_erg_groups, erg_group_midpoints[:-1] * g_data_total[:,1] / g_erg_group_width)[1],
+#         label='Source Spectrum', color='goldenrod')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#              erg_group_midpoints[:-1] * g_data_total[:,1] / g_erg_group_width, 
+#             (g_data_total[:,1] / g_erg_group_width) * g_data_total[:,2] * erg_group_midpoints[:-1], 
+#             color='goldenrod', linestyle="None", capsize=0)
+#plt.plot(makeStep(g_erg_groups, g_filter_data[:,1])[0], 
+#         makeStep(g_erg_groups,  erg_group_midpoints[:-1] * g_filter_data[:,1] / g_erg_group_width)[1],
+#         label='Filtered Spectrum', color='navajowhite')
+#plt.errorbar(erg_group_midpoints[:-1], 
+#              erg_group_midpoints[:-1] * g_filter_data[:,1] / g_erg_group_width, 
+#             (g_filter_data[:,1] / g_erg_group_width) * g_filter_data[:,2] *  erg_group_midpoints[:-1], 
+#             color='navajowhite', linestyle="None", capsize=0)
+#plt.legend()
+#plt.savefig('output_plot/spectral_comparison_lethargy.png', dpi=200)
+#plt.close()
 
 
 
@@ -352,8 +413,8 @@ plt.close()
 #               plot flux as a function of energy integrated over angle
 ###############################################################################
 plt.figure(0, figsize=(6, 4.25))
-plt.xlabel('Energy  $MeV$')
-plt.ylabel('$\phi(E)$  $MeV^{-1}cm^{-2}s^{-1}$')
+plt.xlabel('Energy  MeV')
+plt.ylabel('$\phi(E)$  MeV$^{-1}$cm$^{-2}$s$^{-1}$')
 plt.xscale('log')
 plt.yscale('log')
 plt.xlim(1E-8, 2E1)
