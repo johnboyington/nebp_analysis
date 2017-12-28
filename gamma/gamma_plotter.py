@@ -77,27 +77,38 @@ class Plot(object):
     def plot_raw(self):
         fig = plt.figure(0)
         ax = fig.add_subplot(111)
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
         ax.set_xlabel('Energy $keV$')
         ax.set_ylabel('Fluence $s^{-1}keV^{-1}$')
         ax.set_yscale('log')
         ax.set_xlim(0, 1E4)
-        ax.plot(self.exp_gamma_raw.step_x, self.exp_gamma_raw.step_y, label='Raw')
-        ax.plot(self.background.step_x, self.background.step_y, label='Background')
-        ax.plot(self.exp_gamma.step_x, self.exp_gamma.step_y, label='Corrected')
-        ax.legend()
+        style = {'color': 'salmon',  'linewidth': 0.7, 'label': 'Raw'}
+        ax.plot(self.exp_gamma_raw.step_x, self.exp_gamma_raw.step_y, **style)
+        style = {'color': 'darkgreen',  'linewidth': 0.7, 'label': 'Background'}
+        ax.plot(self.background.step_x, self.background.step_y, **style)
+        style = {'color': 'indigo',  'linewidth': 0.7, 'label': 'Corrected'}
+        ax.plot(self.exp_gamma.step_x, self.exp_gamma.step_y, **style)
+        ax.legend(frameon=False)
         fig.savefig('raw.png', dpi=300)
 
     def plot_gamma(self):
         fig = plt.figure(1)
         ax = fig.add_subplot(111)
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
         ax.set_xlabel('Energy $keV$')
         ax.set_ylabel('Fluence $s^{-1}keV^{-1}$')
         ax.set_yscale('log')
         ax.set_xlim(0, 1E4)
         ax.set_ylim(1E-5, 4E3)
-        ax.plot(self.the_gamma.step_x, self.the_gamma.step_y, label='MCNP')
-        ax.plot(self.exp_gamma.step_x, self.exp_gamma.step_y, label='NaI Detector')
-        ax.legend()
+        style = {'color': 'red',  'linewidth': 0.7, 'linestyle': '--', 'label': 'MCNP'}
+        ax.plot(self.the_gamma.step_x, self.the_gamma.step_y, **style)
+        ax.text(8000, 1E1, 'MCNP')
+        style = {'color': 'indigo',  'linewidth': 0.7, 'label': 'NaI Detector'}
+        ax.plot(self.exp_gamma.step_x, self.exp_gamma.step_y, **style)
+        ax.text(8000, 1E-4, 'NaI Detector')
+        # ax.legend(frameon=False)
         fig.savefig('gamma.png', dpi=300)
 
 
